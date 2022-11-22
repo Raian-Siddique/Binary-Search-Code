@@ -9,13 +9,13 @@ public class binarySearchCode {
             int mid = (start + end) / 2;
 
             // comparisons
-            if (numbers[mid] == key) {
+            if (numbers[mid] == key) { // Found
                 return mid;
             }
 
-            if (numbers[mid] < key) {
+            if (numbers[mid] < key) { // Right
                 start = mid + 1;
-            } else {
+            } else { // Left
                 end = mid - 1;
             }
         }
